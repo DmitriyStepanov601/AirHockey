@@ -14,3 +14,15 @@ opponent. If a player stops the puck with his hand or anything other than the ba
 on the opponent's side is also considered a violation. It is impossible to completely cross the center line with a crowd — the game stops and the move is 
 transferred. If the puck leaves the table after a strong hit from someone else's cue ball, the move is passed to the defending player-despite the fact 
 that the puck flew off his cue ball.
+
+A very well-known tactic is "Stationary Officer" or simply "Elephant". The essence of this tactic is not to move away from the goal and cover the very 
+middle, and if the puck flies to the edge of the goal, the bat can simply be moved a couple of centimeters. This tactic is only suitable for defense, 
+it is not very convenient to attack.
+
+Tactic:"The best defense is offense." The essence of it is to hammer the opponent into a corner with the sharpness of the blow. All strikes must occur 
+very sharply and very strongly. But do not overdo it, this tactic can score not only the opponent, but also yourself. This tactic is more suitable only 
+for the offensive, but it is very difficult to defend with this tactic.
+
+The "Fun Corner" tactic. All strikes are carried out from the side, when you hit the puck with a cue ball, the angle should be directed to the 
+opponent's goal, this tactic is easy for both offensive and defensive, but keep in mind that the opponent will not be able to level the puck the 
+first time, so it will fly to you, respectively, at an angle.
