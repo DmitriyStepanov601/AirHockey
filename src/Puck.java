@@ -1,0 +1,97 @@
+import java.awt.*;
+/**
+ * Class describing the puck
+ * @author Dmitriy Stepanov
+ */
+public class Puck {
+    private float x, y, velx, vely;
+    private final int radius;
+    private float vel, dir;
+    private final double mass;
+    private final AirHockey game;
+
+    /**
+     * Constructor - creating a new puck
+     * @param game - game
+     * @param x - X coordinate
+     * @param y - Y coordinate
+     * @see Puck#Puck(AirHockey,int,int)
+     */
+    public Puck(AirHockey game, int x, int y) {
+        this.x = x;
+        this.y = y;
+        this.vel = 0;
+        this.dir = 175;
+        this.velx = Physics.calcVels(vel, dir)[0];
+        this.vely = Physics.calcVels(vel, dir)[1];
+        this.radius = 10;
+        this.mass = 1.25;
+        this.game = game;
+    }
+
+    //Update, player collisions and wall collisions
+    public void update() {
+        Physics.collides(game.getPlayer(), this);
+        Physics.collidesWall(this);
+        this.velx = Physics.calcVels(vel, dir)[0];
+        this.vely = Physics.calcVels(vel, dir)[1];
+        vel = Physics.adjust(vel);
+        this.x += velx;
+        this.y += vely;
+    }
+
+    //Renders the puck
+    public void render(Graphics g) {
+        Graphics2D g2 = (Graphics2D) g;
+        g2.setRenderingHint(RenderingHints.KEY_ANTIALIASING, RenderingHints.VALUE_ANTIALIAS_ON);
+        g.setColor(Color.BLACK);
+        g.fillOval((int) x, (int) y, radius * 2, radius * 2);
+    }
+
+    public int getRadius() {
+        return radius;
+    }
+    public float getX() {
+        return x + radius;
+    }
+    public float getY() {
+        return y + radius;
+    }
+    public float getVelX() {
+        return velx;
+    }
+    public float getVelY() {
+        return vely;
+    }
+    public void setVelX(float velX) {
+        this.velx = velX;
+    }
+    public void setVelY(float velY) {
+        this.vely = velY;
+    }
+    public double getMass() {
+        return mass;
+    }
+    public void setX(float x) {
+        this.x = x - radius;
+    }
+    public void setY(float y) {
+        this.y = y - radius;
+    }
+    public float getVel() {
+        return vel;
+    }
+    public float getDir() {
+        return dir;
+    }
+    public void setVel(float vel) {
+        this.vel = vel;
+    }
+    public void setDir(float dir) {
+        this.dir = dir;
+    }
+
+    public Rectangle getBounds() {
+        return new Rectangle((int) x, (int) y, radius * 2, radius * 2);
+    }
+}
