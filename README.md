@@ -1,6 +1,6 @@
 # AirHockey
 
-This app is an interpretation of the game Aero Hockey. The goal of the game is to score the puck in the opponent's goal. 
+This app is an interpretation of the game Air Hockey. The goal of the game is to score the puck in the opponent's goal. 
 The player who starts the match is determined by throwing the puck or drawing lots. For each goal scored in the opponent's goal, one point is awarded. 
 The winner is the first person to score seven points. A goal is scored when the puck falls into the goal, even if it is not recorded by an electronic 
 scoring device. If the puck hangs in the goal at an angle — it is a goal.
@@ -14,6 +14,7 @@ opponent. If a player stops the puck with his hand or anything other than the ba
 on the opponent's side is also considered a violation. It is impossible to completely cross the center line with a crowd — the game stops and the move is 
 transferred. If the puck leaves the table after a strong hit from someone else's cue ball, the move is passed to the defending player-despite the fact 
 that the puck flew off his cue ball.
+
 
 A very well-known tactic is "Stationary Officer" or simply "Elephant". The essence of this tactic is not to move away from the goal and cover the very 
 middle, and if the puck flies to the edge of the goal, the bat can simply be moved a couple of centimeters. This tactic is only suitable for defense, 
